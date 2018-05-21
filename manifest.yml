@@ -1,6 +1,4 @@
 applications:
-- services:
-  - productDB
   name: lab-productapis
   memory: 256m
   instances: 1
