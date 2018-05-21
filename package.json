@@ -1,24 +1,24 @@
 {
-  "name": "productapis",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nd541/productapis.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nd541/productapis/issues"
-  },
-  "dependencies": {
-    "cfenv": "^1.0.x",
-    "express": "^4.14.1",
-    "cloudant": "*"
-  },
-  "homepage": "https://github.com/nd541/productapis#readme"
+    "name": "productapis",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/spsolutionsmexico/productapis.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/spsolutionsmexico/productapis/issues"
+    },
+    "dependencies": {
+        "cfenv": "^1.0.x",
+        "express": "^4.14.1",
+        "cloudant": "*"
+    },
+    "homepage": "https://github.com/spsolutionsmexico/productapis#readme"
 }
