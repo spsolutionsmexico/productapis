@@ -5,7 +5,6 @@ var cfenv = require("cfenv");
 var appEnv = cfenv.getAppEnv();
 cloudantService = appEnv.getService("TestDB");
 
-
 /******************************
  * APIs 
  *******************************/
