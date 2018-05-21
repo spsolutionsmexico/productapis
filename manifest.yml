@@ -1,5 +1,7 @@
 applications:
-  name: lab-productapis
+- services:
+  - TestDB
+  name: lab-customerapis
   memory: 256m
   instances: 1
   path: .
