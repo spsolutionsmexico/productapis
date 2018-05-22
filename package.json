@@ -1,16 +1,17 @@
 {
-    "name": "productapis",
+    "name": "c",
     "version": "1.0.0",
-    "description": "",
+    "description": "productapis",
     "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/spsolutionsmexico/productapis.git"
     },
-    "author": "",
+    "author": "israel",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/spsolutionsmexico/productapis/issues"
@@ -20,5 +21,8 @@
         "express": "^4.14.1",
         "cloudant": "*"
     },
-    "homepage": "https://github.com/spsolutionsmexico/productapis#readme"
+    "homepage": "https://github.com/spsolutionsmexico/productapis#readme",
+    "keywords": [
+        "productapis-dev"
+    ]
 }
