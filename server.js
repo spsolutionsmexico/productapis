@@ -13,7 +13,7 @@ app.listen(port, function() {
 });
 
 
-router.get('/api/ift/:telefono', (req, res) => {
+app.get('/api/ift/:telefono', (req, res) => {
 
     var telefono = req.params.telefono;
     var web = "http://office.ekiwi.net:8081/MonteDePiedadAPI/runSnsIft?apiKey=UhTtDEtCgAwTQ2y6htVKV9BL&host=localhost&port=8799&phone=" + telefono;
