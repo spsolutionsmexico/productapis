@@ -6,14 +6,8 @@ var request = require('request');
 var appEnv = cfenv.getAppEnv();
 
 app.get('/api/v1/welcome', function(req, res) {
-    res.send("Hello Sunil");
+    res.send("Hello User");
 });
-var port = process.env.PORT || 9080;
-app.listen(port, function() {
-    console.log('App started on port:' + port);
-});
-
-
 app.get('/api/ift/:telefono', (req, res) => {
 
     var telefono = req.params.telefono;
@@ -32,7 +26,6 @@ app.get('/api/ift/:telefono', (req, res) => {
             else resolve(body);
         });
     });
-
     promise.then(function(response) {
         var resp = JSON.parse(response);
         console.log(resp);
@@ -40,4 +33,8 @@ app.get('/api/ift/:telefono', (req, res) => {
         res.send(respuesta);
     });
 
+});
+var port = process.env.PORT || 9080;
+app.listen(port, function() {
+    console.log('App started on port:' + port);
 });
