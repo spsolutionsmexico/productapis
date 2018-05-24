@@ -25,13 +25,10 @@ app.get('/api/ift/:telefono', function(req, res) {
             if (error) reject(error);
             else resolve(body);
         });
-    });
-    promise.then(function(response) {
-        var resp = JSON.parse(response);
-        console.log(resp);
-    }).then(function(respuesta) {
-        res.send(respuesta);
-    });
+    }).then(function(response) {
+        console.log(response);
+        res.send(response);
+    })
 });
 
 var port = process.env.PORT || 9080;
