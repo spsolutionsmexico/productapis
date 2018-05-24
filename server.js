@@ -11,7 +11,27 @@ app.get('/api/v1/welcome', function(req, res) {
 
 app.get('/api/ift/:telefono', function(req, res) {
     var telefono = req.params.telefono;
-    res.send("Telefono = " + telefono);
+    var web = "http://office.ekiwi.net:8081/MonteDePiedadAPI/runSnsIft?apiKey=UhTtDEtCgAwTQ2y6htVKV9BL&host=localhost&port=8799&phone=" + telefono;
+
+    var promise = new Promise(function(resolve, reject) {
+        request({
+            method: "GET",
+            url: web,
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }, function(error, res, body) {
+            console.log(body);
+            if (error) reject(error);
+            else resolve(body);
+        });
+    });
+    promise.then(function(response) {
+        var resp = JSON.parse(response);
+        console.log(resp);
+    }).then(function(respuesta) {
+        res.send(respuesta);
+    });
 });
 
 var port = process.env.PORT || 9080;
